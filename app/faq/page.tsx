@@ -26,12 +26,15 @@ const faqs = [
 export default function FaqPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 py-16">
-      <h1 className="font-heading text-3xl font-semibold text-brand-600">
+      <h1 className="fade-in-up font-heading text-3xl font-semibold text-brand-600">
         Frequently Asked Questions
       </h1>
       <div className="mt-10 space-y-6">
-        {faqs.map((f) => (
-          <div key={f.q} className="rounded-xl bg-white p-6 shadow-sm">
+        {faqs.map((f, i) => (
+          <div
+            key={f.q}
+            className={`hover-lift fade-in-up delay-${(i % 6) + 1} rounded-xl border-l-4 border-l-brand-200 bg-white p-6 shadow-soft hover:shadow-floating hover:border-l-brand-500`}
+          >
             <h2 className="font-heading font-semibold text-brand-600">{f.q}</h2>
             <p className="mt-2 text-sm text-brand-900/70">{f.a}</p>
           </div>

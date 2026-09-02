@@ -11,7 +11,7 @@ function SubmitButton() {
     <button
       type="submit"
       disabled={pending}
-      className="rounded-full bg-brand-500 px-6 py-2 font-medium text-white transition-transform hover:scale-105 disabled:opacity-60"
+      className="cursor-pointer rounded-full bg-brand-500 px-6 py-2 font-medium text-white shadow-soft transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-600 hover:shadow-lift disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0"
     >
       {pending ? "Submitting…" : "Book My Free Trial"}
     </button>
@@ -23,7 +23,7 @@ export default function TrialForm() {
 
   if (state.status === "success") {
     return (
-      <div className="rounded-xl bg-brand-100 p-6 text-brand-900 fade-in-up">
+      <div className="fade-in-up rounded-xl border-t-4 border-t-sage-600 bg-sage-50 p-6 text-sage-700">
         {state.message}
       </div>
     );
@@ -36,29 +36,29 @@ export default function TrialForm() {
           name="parent_name"
           required
           placeholder="Parent/guardian name"
-          className="rounded-md border border-brand-100 px-3 py-2"
+          className="rounded-md border border-brand-300 bg-brand-50/30 px-3 py-2 transition-colors duration-200 focus:border-brand-500 focus:bg-white"
         />
         <input
           name="parent_phone"
           required
           placeholder="Phone / WhatsApp"
-          className="rounded-md border border-brand-100 px-3 py-2"
+          className="rounded-md border border-brand-300 bg-brand-50/30 px-3 py-2 transition-colors duration-200 focus:border-brand-500 focus:bg-white"
         />
         <input
           name="parent_email"
           type="email"
           required
           placeholder="Email"
-          className="rounded-md border border-brand-100 px-3 py-2"
+          className="rounded-md border border-brand-300 bg-brand-50/30 px-3 py-2 transition-colors duration-200 focus:border-brand-500 focus:bg-white"
         />
         <input
           name="child_name"
           placeholder="Child's name"
-          className="rounded-md border border-brand-100 px-3 py-2"
+          className="rounded-md border border-brand-300 bg-brand-50/30 px-3 py-2 transition-colors duration-200 focus:border-brand-500 focus:bg-white"
         />
         <select
           name="student_level"
-          className="rounded-md border border-brand-100 px-3 py-2"
+          className="rounded-md border border-brand-300 bg-brand-50/30 px-3 py-2 transition-colors duration-200 focus:border-brand-500 focus:bg-white"
           defaultValue=""
         >
           <option value="" disabled>
@@ -71,7 +71,7 @@ export default function TrialForm() {
         </select>
         <select
           name="subject_interest"
-          className="rounded-md border border-brand-100 px-3 py-2"
+          className="rounded-md border border-brand-300 bg-brand-50/30 px-3 py-2 transition-colors duration-200 focus:border-brand-500 focus:bg-white"
           defaultValue=""
         >
           <option value="" disabled>
@@ -85,7 +85,7 @@ export default function TrialForm() {
       <textarea
         name="message"
         placeholder="Anything else we should know? (optional)"
-        className="w-full rounded-md border border-brand-100 px-3 py-2"
+        className="w-full rounded-md border border-brand-300 bg-brand-50/30 px-3 py-2 transition-colors duration-200 focus:border-brand-500 focus:bg-white"
         rows={3}
       />
       <label className="flex items-start gap-2 text-sm text-brand-900/80">
