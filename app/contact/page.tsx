@@ -1,6 +1,6 @@
 import TrialForm from "@/components/TrialForm";
 
-export const metadata = { title: "Contact — JustEdu" };
+export const metadata = { title: "Contact | JustEdu" };
 
 export default function ContactPage() {
   return (
@@ -9,8 +9,9 @@ export default function ContactPage() {
         Contact & Enquire
       </h1>
       <p className="fade-in-up delay-1 mt-2 text-brand-900/70">
-        Reach out for a free trial class, a course enquiry, or general questions. Placeholder
-        phone/WhatsApp/email — to be replaced with real centre contact details.
+        Reach out for a free trial class, a course enquiry, or general questions using the form
+        below. Direct phone, WhatsApp and email contacts are placeholders, pending real centre
+        details.
       </p>
       <div className="fade-in-up delay-2 mt-8">
         <TrialForm />

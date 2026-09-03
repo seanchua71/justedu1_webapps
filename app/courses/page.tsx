@@ -1,4 +1,4 @@
-export const metadata = { title: "Courses — JustEdu" };
+export const metadata = { title: "Courses | JustEdu" };
 
 const accentClasses = {
   rose: {
@@ -22,42 +22,42 @@ const courses = [
   {
     subject: "English",
     stage: "Primary",
-    detail: "P1 – P6",
+    detail: "P1-P6",
     desc: "Reading, composition and oral skills built through warm, structured guidance.",
     accent: "rose",
   },
   {
     subject: "Mathematics",
     stage: "Primary",
-    detail: "P1 – P6",
+    detail: "P1-P6",
     desc: "Concept-first approach aligned to the MOE syllabus, from whole numbers to fractions.",
     accent: "gold",
   },
   {
     subject: "Science",
     stage: "Primary",
-    detail: "P3 – P6",
+    detail: "P3-P6",
     desc: "Hands-on, inquiry-based lessons that build a genuine love of discovery.",
     accent: "sage",
   },
   {
     subject: "English",
     stage: "Secondary",
-    detail: "Sec 1 – 4 (O-Level)",
+    detail: "Sec 1-4 (O-Level)",
     desc: "Exam-focused composition and comprehension coaching for O-Level success.",
     accent: "rose",
   },
   {
     subject: "Mathematics",
     stage: "Secondary",
-    detail: "Sec 1 – 4 (E/A-Maths)",
+    detail: "Sec 1-4 (E/A-Maths)",
     desc: "Structured practice and exam technique for both E-Maths and A-Maths.",
     accent: "gold",
   },
   {
     subject: "Science",
     stage: "Secondary",
-    detail: "Sec 1 – 4 (Combined/Pure)",
+    detail: "Sec 1-4 (Combined/Pure)",
     desc: "Physics, Chemistry and Biology foundations taught with real-world context.",
     accent: "sage",
   },
@@ -68,8 +68,8 @@ export default function CoursesPage() {
     <div className="mx-auto max-w-5xl px-4 py-16">
       <h1 className="fade-in-up font-heading text-3xl font-semibold text-brand-600">Courses</h1>
       <p className="fade-in-up delay-1 mt-2 max-w-xl text-brand-900/70">
-        Placeholder course listing — pending real syllabus detail, fees and schedules per
-        centre. Data model already supports linking each course to specific centres and
+        Placeholder course listing, pending real syllabus detail, fees and schedules per
+        centre. The data model already supports linking each course to specific centres and
         timings via the <code>centre_courses</code> table.
       </p>
 

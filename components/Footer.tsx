@@ -12,7 +12,8 @@ export default function Footer() {
   return (
     <footer className="mt-24 bg-brand-900 py-12 text-sm text-brand-50/80">
       <div className="mx-auto max-w-5xl px-4">
-        <p className="font-heading text-lg text-white">JustEdu — Teaching From Our Hearts</p>
+        <p className="font-heading text-lg font-semibold text-white">JustEdu</p>
+        <p className="mt-1 text-brand-50/70">Teaching From Our Hearts</p>
         <nav className="mt-4 flex flex-wrap gap-x-6 gap-y-2 sm:hidden">
           {links.map((l) => (
             <Link
