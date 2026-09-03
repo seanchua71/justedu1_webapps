@@ -41,6 +41,18 @@ const accentClasses = {
 
 export default function HomePage() {
   return (
+    <>
+    <section className="fade-in-up bg-white">
+      <Image
+        src="/promo-banner.jpg"
+        alt="JustEdu Tuition and Student Care. Primary and Secondary English, Maths, Science, Chinese. Over 27 years of excellence, award-winning tuition centre. Free trial available, WhatsApp 8546 6318."
+        width={2000}
+        height={933}
+        priority
+        className="h-auto w-full"
+      />
+    </section>
+
     <div className="mx-auto max-w-5xl px-4">
       <section className="grid items-center gap-10 py-16 sm:py-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
         <div className="text-center lg:text-left">
@@ -119,5 +131,6 @@ export default function HomePage() {
         </div>
       </section>
     </div>
+    </>
   );
 }
