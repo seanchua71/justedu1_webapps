@@ -38,7 +38,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        heading: ["Georgia", "serif"],
+        // Plus Jakarta Sans, loaded via next/font in app/layout.tsx — warm and
+        // rounded without tipping into a "creative brief = serif" default.
+        heading: ["var(--font-heading)", "system-ui", "sans-serif"],
         body: ["system-ui", "sans-serif"],
       },
       boxShadow: {

@@ -1,4 +1,4 @@
-export const metadata = { title: "FAQ — JustEdu" };
+export const metadata = { title: "FAQ | JustEdu" };
 
 const faqs = [
   {
@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     q: "Who are the tutors?",
-    a: "Placeholder — add tutor qualification and vetting information here.",
+    a: "Placeholder, add tutor qualification and vetting information here.",
   },
   {
     q: "How is my data used?",
@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     q: "Can I reschedule or cancel a trial?",
-    a: "Placeholder — add rescheduling/cancellation policy here.",
+    a: "Placeholder, add rescheduling/cancellation policy here.",
   },
 ];
 
